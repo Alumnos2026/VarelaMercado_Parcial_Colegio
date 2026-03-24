@@ -14,6 +14,92 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          #f5f7fa 0%,
+          #e4e8ec 50%,
+          #d4e4ed 100%
+        );
+        min-height: 100vh;
+      }
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .hero p {
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .sobre-nosotros {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px 0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+        border: none;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.15);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.25);
+      }
+      .card i {
+        font-size: 50px;
+        color: #667eea;
+        margin: 20px 0;
+      }
+      header {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      }
+      header .nav-link {
+        color: white !important;
+      }
+      header .nav-link.active {
+        background-color: #667eea !important;
+      }
+      header .fs-4 {
+        color: white !important;
+      }
+      footer {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      }
+      footer .text-muted {
+        color: rgba(255, 255, 255, 0.7) !important;
+      }
+      footer .nav-link {
+        color: rgba(255, 255, 255, 0.7) !important;
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+      }
+      .contacto .contact-item i {
+        font-size: 30px;
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+      .contacto .contact-item h5 {
+        color: #2c3e50;
+        font-weight: 600;
+      }
+      .contacto .contact-item p {
+        color: #555;
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -48,10 +134,17 @@
               <a href="#mision" class="nav-link">Oferta Educativa</a>
             </li>
             <li class="nav-item">
-              <a href="#vision" class="nav-link">Enfoque</a>
+              <a href="#enfoque" class="nav-link">Enfoque</a>
             </li>
             <li class="nav-item">
-              <a href="#sobre-nosotros" class="nav-link">Contacto</a>
+              <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.facebook.com/Colegio.josue1.8/?locale=es_LA"
+                class="nav-link"
+                ><i class="bi bi-facebook">Facebook</i></a
+              >
             </li>
           </ul>
         </header>
@@ -86,7 +179,7 @@
               <div
                 class="col-12 col-md-6 col-lg-4 d-flex justify-content-center"
               >
-                <div class="card" style="width: 18rem">
+                <div class="card h-100" style="width: 18rem">
                   <i class="bi bi-mortarboard text-center"></i>
                   <div class="card-body text-center">
                     <h5 class="card-title text-center">Oferta Educativa</h5>
@@ -98,10 +191,8 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="col-12 col-md-6 col-lg-4 d-flex justify-content-center"
-              >
-                <div class="card" style="width: 18rem">
+              <div id="enfoque"class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100" style="width: 18rem">
                   <i class="bi bi-binoculars text-center"></i>
                   <div class="card-body text-center">
                     <h5 class="card-title text-center">Enfoque</h5>
@@ -112,6 +203,40 @@
                     <a href="#" class="btn btn-primary">Matriculate Ahora</a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacto" id="contacto">
+        <div class="container-fluid">
+          <div class="sobre-nosotros">
+            <h2 class="text-center">Información de Contacto y Ubicación</h2>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <h5>Dirección</h5>
+                  <p>
+                    Km 16 ½ Carretera Nueva a León, de la gasolinera Puma 1
+                    cuadra al norte y 1 cuadra al este, Los Brasiles.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="contact-item">
+                  <i class="bi bi-telephone-fill"></i>
+                  <h5>Teléfonos</h5>
+                  <p>+505 8625 3709 / 2269 0395</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="contact-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <h5>Correo Electrónico</h5>
+                  <p>colegiocristianojosue18@hotmail.com</p>
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -143,7 +268,11 @@
               <a href="#" class="nav-link px-2 text-muted">Visión</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Contacto</a>
+              <a
+                href="https://www.facebook.com/Colegio.josue1.8/?locale=es_LA"
+                class="nav-link px-2 text-muted"
+                >Facebook</a
+              >
             </li>
           </ul>
         </footer>
